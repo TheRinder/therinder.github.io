@@ -17,19 +17,19 @@
                     <span>Front-End</span>
                 </a>
             </div>
-            <nav class="header-nav">
+            <!-- <nav class="header-nav">
                 <ul>
                     <li><a href="#schedule">Рассписание</a></li>
                     <li><a href="#materials">Материалы</a></li>
                     <li><a href="#projects">Проекты</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
     </header>
     <main class="container">
-        <section id="schedule" class="schedule">
-            <h2>Рассписание</h2>
+        <section id="schedule" class="box">
+            <h2 class="title-section">Рассписание</h2>
             <div class="today">
                 <p class="today-title">
                     <span>
@@ -43,19 +43,76 @@
 
                 </div>
             </div>
-            <div id="schedule_list" class="schedule-list">
+            <div>
+                <div id="schedule_list" class="schedule-list">
 
+                </div>
+                <div style="text-align: end;">
+                    <button class="btn schedule-list__btn" id="show1" onclick="showSchedule()">Развернуть
+                        расписание</button>
+                </div>
             </div>
 
         </section>
-        <section id="materials">
-
+        <section id="materials" class="box materials">
+            <h2 class="title-section">Материалы</h2>
+            <div class="material-item__container" id="material_list"></div>
         </section>
-        <section id="projects">
+        <section id="projects" class="box projects">
+            <h2 class="title-section">Проекты</h2>
+            <p class="notToday">Тут пока пусто</p>
 
         </section>
     </main>
-    <footer id="contacts" class="container">
+    <footer id="contacts" class="container footer">
+        <div class="box ">
+            <div>
+                <p class="footer-title">Преподаватель</p>
+                <div class="flex flex_align_center">
+                    <p class="footer-name">Гольчук Кирилл</p>
+                    <p>
+                        <a href="https://t.me/joinchat/ARnjDKC__uBkNmVi">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                    fill="url(#paint0_linear_1:11)" />
+                                <path
+                                    d="M4.99422 11.8959L13.0751 8.56647C13.8728 8.21965 16.578 7.10982 16.578 7.10982C16.578 7.10982 17.8266 6.62427 17.7225 7.80346C17.6879 8.28901 17.4104 9.98843 17.1329 11.8266L16.2659 17.2717C16.2659 17.2717 16.1965 18.0694 15.6069 18.2081C15.0173 18.3468 14.0462 17.7225 13.8728 17.5838C13.7341 17.4798 11.2717 15.9191 10.3699 15.1561C10.1272 14.948 9.84971 14.5318 10.4046 14.0462C11.6532 12.9017 13.1445 11.4798 14.0462 10.578C14.4624 10.1618 14.8786 9.19075 13.1445 10.3699L8.25434 13.6647C8.25434 13.6647 7.69942 14.0116 6.65896 13.6994C5.6185 13.3873 4.40463 12.9711 4.40463 12.9711C4.40463 12.9711 3.57226 12.4509 4.99422 11.8959Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1:11" x1="16.0009" y1="4.00092" x2="10.0009"
+                                        y2="18" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#37AEE2" />
+                                        <stop offset="1" stop-color="#1E96C8" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p class="footer-title">База обучения</p>
+                <div class="flex flex_align_center">
+                    <p class="footer-name">Компьютерная Академия ШАГ</p>
+                    <ul class="flex footer-link__list">
+                        <li>
+                            <a href="https://brest.itstep.by/">Сайт</a>
+                        </li>
+                        <li>
+                            <a href="tel:+375336335353">+375(33) 633-53-53</a>
+                        </li>
+                        <li>
+                            <a href="tel:+375291110925">+375(29) 111-09-25</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p >Разработка сайта: TheRinder &#169; #byHalchuk 2021</p>
+            </div>
+        </div>
 
     </footer>
     <script src="./js/index.js"></script>
