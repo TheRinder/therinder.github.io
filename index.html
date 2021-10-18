@@ -7,28 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ItStep - Front-end (F1021)</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="">Материалы</a></li>
-                <li><a href="">Рассписание</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="container header">
+            <div class="header-logo">
+                <a href="/">
+                    <span>Front-End</span>
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#schedule">Рассписание</a></li>
+                    <li><a href="#materials">Материалы</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
+    <main class="container">
+        <section id="schedule" class="schedule">
+            <h2>Рассписание</h2>
+            <div class="today">
+                <p class="today-title">
+                    <span>
+                        Сегодня
+                    </span>
+                    <span id="date">
+                        21 июн 2021 20:26
+                    </span>
+                </p>
+                <div id="list_today">
+
+                </div>
+            </div>
+            <div id="schedule_list" class="schedule-list">
+
+            </div>
+
+        </section>
+        <section id="materials">
+
+        </section>
+        <section id="projects">
 
         </section>
     </main>
-    <footer>
+    <footer id="contacts" class="container">
 
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
