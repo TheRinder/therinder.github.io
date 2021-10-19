@@ -249,13 +249,15 @@ h2 {
 }
 
 .materials,
-.projects {
+.projects,
+.news {
     margin-top: 30px;
 }
 
 .material-item__img {
     width: 100px;
     height: 100px;
+    min-width: 100px;
 }
 
 .material-item__img img {
@@ -285,6 +287,11 @@ h2 {
 .material-item__theam {
     font-size: 22px;
     line-height: 26px;
+}
+.material-item__date {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
 }
 
 .material-item__autor {
@@ -371,6 +378,7 @@ h2 {
 }
 
 .footer-title {
+    display: inline;
     font-size: 22px;
     line-height: 26px;
     font-weight: 500;
@@ -422,4 +430,18 @@ h2 {
 
     font-size: 11px;
     font-weight: 300;
+}
+.popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+.popup-bg_close {
+    background: rgba(3, 29, 46, 0.253);
+    display: block;
+    position: relative;
+    z-index: 6;
+    height: 100%;
+    width: 100%;
 }

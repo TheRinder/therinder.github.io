@@ -63,15 +63,15 @@ const CheckDate = () => {
 const checkNumber = text => {
     return text > 9 ? text : `0${text}`
 }
+const MONTH = ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек']
 const digitalClock = () => {
-    const arr = ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек']
     var date = new Date();
     var hours = date.getHours();
     var minutes = date.getMinutes();
     //* добавление ведущих нулей */
     if (hours < 10) hours = "0" + hours;
     if (minutes < 10) minutes = "0" + minutes;
-    document.getElementById("date").innerHTML = checkNumber(date.getDay()) + " " + arr[date.getMonth()] + " " + date.getUTCFullYear() + " " + hours + ":" + minutes;
+    document.getElementById("date").innerHTML = checkNumber(date.getDay()) + " " + MONTH[date.getMonth()] + " " + date.getUTCFullYear() + " " + hours + ":" + minutes;
     setTimeout("digitalClock()", 1000);
 }
 
@@ -110,9 +110,16 @@ const materials = [
         imageUrl: "./image/powerpoint-2.svg",
         title: "Основы HTML - Глава 1 (занятие 1-2)"
     },
+    {
+        url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKp9vNGTTxcHrOWrfA?e=iPz6KA",
+        createDate: "2021-11-02T18:30:00.801Z",
+        autor: "Гольчук Кирилл",
+        imageUrl: "./image/powerpoint-2.svg",
+        title: "Основы HTML - Глава 1 (занятие 1-2)"
+    },
 
 ]
-const TemplateMaterial = (url, title, autor, imageUrl) => {
+const TemplateMaterial = (url, title, autor, imageUrl, date) => {
     return `<span role="button" onclick="onClickMaterial('${url}')"
     class="btn-span">
     <div class="material-item flex">
@@ -121,20 +128,31 @@ const TemplateMaterial = (url, title, autor, imageUrl) => {
         </div>
         <div class="material-item__info">
             <p class="material-item__theam">${title}</p>
+            <p class="material-item__date">${date}</p>
             <p class="material-item__autor">${autor}</p>
         </div>
     </div>
 </span>
     `
 }
+// сортировка по дате
+// var arr = materials.sort(function (a, b) {
+//     return new Date(b.createDate) - new Date(a.createDate);
+// })
+// var arr = materials.sort(function (a, b) {
+//     return new Date(a.createDate) - new Date(b.createDate)
+// })
 const MaterialRender = materials => {
     var result = ``
     materials.map(item => {
         const { url,
             autor,
             imageUrl,
-            title } = item
-        result += TemplateMaterial(url, title, autor, imageUrl)
+            title,
+            createDate } = item
+        const cd = new Date(createDate)
+        const date = checkNumber(cd.getDate()) + " " + MONTH[cd.getMonth()] + " " + cd.getUTCFullYear()
+        result += TemplateMaterial(url, title, autor, imageUrl, date)
         return null
     })
     return result
