@@ -102,7 +102,15 @@ const materials = [
         autor: "Гольчук Кирилл",
         imageUrl: "./image/powerpoint-2.svg",
         title: "Введение в профессию – front-end (занятие 1-2)"
-    }
+    },
+    {
+        url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKp9vNGTTxcHrOWrfA?e=iPz6KA",
+        createDate: "2021-10-19T18:30:00.801Z",
+        autor: "Гольчук Кирилл",
+        imageUrl: "./image/powerpoint-2.svg",
+        title: "Основы HTML - Глава 1 (занятие 1-2)"
+    },
+
 ]
 const TemplateMaterial = (url, title, autor, imageUrl) => {
     return `<span role="button" onclick="onClickMaterial('${url}')"
@@ -131,22 +139,36 @@ const MaterialRender = materials => {
     })
     return result
 }
-/*
-<span role="button" onclick="onClickMaterial('https://1drv.ms/p/s!AlI_mdwQk8yOhKp6cE0aXwzKBxVchw')"
-                    class="btn-span">
-                    <div class="material-item flex">
-                        <div class="material-item__img">
-                            <img src="./image/powerpoint-2.svg" alt="">
-                        </div>
-                        <div class="material-item__info">
-                            <p class="material-item__theam">Создание сайтов HTML5/CSS3 - введение (урок 1)</p>
-                            <p class="material-item__autor">Гольчук Кирилл</p>
-                        </div>
-                    </div>
-                </span>
-*/
+const TemplateProject = (title, url, imageUrl) => {
+    return `<span class="btn-span" role="button" onclick="onClickMaterial('${url}')">
+    <div class="project-item">
+        <img class="project-item__img" src="${imageUrl}" alt="">
+        <p class="project-item__title"> <span>${title}</span> </p>
+    </div>
+</span>`
+}
+const projects = [
+    {
+        title: "Задание 1-4",
+        url: "./tasks/tasks1.html",
+        imageUrl: "./image/html.png"
+    }
+]
+
+const ProjectRender = projects => {
+    var result = ``
+    projects.map(item => {
+        const { url,
+            imageUrl,
+            title } = item
+        result += TemplateProject(title, url, imageUrl)
+        return null
+    })
+    return result
+}
 
 digitalClock()
 document.querySelector('#schedule_list').innerHTML = ScheduleRender(schedule)
 document.querySelector('#list_today').innerHTML = CheckDate()
 document.querySelector('#material_list').innerHTML = MaterialRender(materials)
+document.querySelector('#project_list').innerHTML = ProjectRender(projects)
