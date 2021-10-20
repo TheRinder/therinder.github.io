@@ -94,28 +94,40 @@ const materials = [
         createDate: "2021-10-12T18:30:00.801Z",
         autor: "Гольчук Кирилл",
         imageUrl: "./image/powerpoint-2.svg",
-        title: "Создание сайтов HTML5/CSS3 - введение (занятие 1-2)"
+        title: "Создание сайтов HTML5/CSS3 - введение (занятие 1-2)",
+        tag: "powerpoint"
     },
     {
         url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKp7bFZy4PXGS8wc3A?e=IrNiNr",
         createDate: "2021-10-15T18:30:00.801Z",
         autor: "Гольчук Кирилл",
         imageUrl: "./image/powerpoint-2.svg",
-        title: "Введение в профессию – front-end (занятие 1-2)"
+        title: "Введение в профессию – front-end (занятие 1-2)",
+        tag: "powerpoint"
+    },
+    {
+        url: "https://youtu.be/zZBiln_2FhM",
+        createDate: "2021-10-15T18:30:00.801Z",
+        autor: "Владилен Минин",
+        imageUrl: "./image/youtube-logo.png",
+        title: "Git и GitHub Курс Для Новичков",
+        tag: "youtybe"
     },
     {
         url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKp9vNGTTxcHrOWrfA?e=iPz6KA",
         createDate: "2021-10-19T18:30:00.801Z",
         autor: "Гольчук Кирилл",
         imageUrl: "./image/powerpoint-2.svg",
-        title: "Основы HTML - Глава 1 (занятие 1-2)"
+        title: "Основы HTML - Глава 1 (занятие 1-2)",
+        tag: "powerpoint"
     },
     {
         url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKp9vNGTTxcHrOWrfA?e=iPz6KA",
         createDate: "2021-11-02T18:30:00.801Z",
         autor: "Гольчук Кирилл",
         imageUrl: "./image/powerpoint-2.svg",
-        title: "Основы HTML - Глава 1 (занятие 1)"
+        title: "Основы HTML - Глава 1 (занятие 1)",
+        tag: "powerpoint"
     },
 
 ]
