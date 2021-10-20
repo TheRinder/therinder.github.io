@@ -115,7 +115,7 @@ const materials = [
         createDate: "2021-11-02T18:30:00.801Z",
         autor: "Гольчук Кирилл",
         imageUrl: "./image/powerpoint-2.svg",
-        title: "Основы HTML - Глава 1 (занятие 1-2)"
+        title: "Основы HTML - Глава 1 (занятие 1)"
     },
 
 ]
