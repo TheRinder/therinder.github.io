@@ -122,13 +122,23 @@ const materials = [
         tag: "powerpoint"
     },
     {
-        url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKp9vNGTTxcHrOWrfA?e=iPz6KA",
-        createDate: "2021-11-02T18:30:00.801Z",
+        url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKsAAYH7slhmz0L-Rg?e=Zza4SG",
+        createDate: "2021-10-21T18:30:00.801Z",
         autor: "Гольчук Кирилл",
         imageUrl: "./image/powerpoint-2.svg",
-        title: "Основы HTML - Глава 1 (занятие 1)",
+        title: "Основы HTML - Глава 2 (занятие 1)",
         tag: "powerpoint"
     },
+    {
+        url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKsFTGaF1ibsQtDDXA?e=KLXRS0",
+        createDate: "2021-10-21T18:30:00.801Z",
+        autor: "Гольчук Кирилл",
+        imageUrl: "./image/powerpoint-2.svg",
+        title: "Введение в CSS (Занятие 2)",
+        tag: "powerpoint"
+    },
+    // https://1drv.ms/p/s!AlI_mdwQk8yOhKsFTGaF1ibsQtDDXA?e=KLXRS0
+
 
 ]
 const TemplateMaterial = (url, title, autor, imageUrl, date) => {
@@ -180,7 +190,11 @@ const TemplateProject = (title, url, imageUrl) => {
 const projects = [
     {
         title: "Задание 1-4",
-        url: "./tasks/tasks1.html",
+        url: "./tasks/task1.html",
+        imageUrl: "./image/html.png"
+    }, {
+        title: "Задание 5-6",
+        url: "./tasks/task2.html",
         imageUrl: "./image/html.png"
     }
 ]
