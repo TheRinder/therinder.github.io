@@ -71,7 +71,7 @@ const digitalClock = () => {
     //* добавление ведущих нулей */
     if (hours < 10) hours = "0" + hours;
     if (minutes < 10) minutes = "0" + minutes;
-    document.getElementById("date").innerHTML = checkNumber(date.getDay()) + " " + MONTH[date.getMonth()] + " " + date.getUTCFullYear() + " " + hours + ":" + minutes;
+    document.getElementById("date").innerHTML = checkNumber(date.getDate()) + " " + MONTH[date.getMonth()] + " " + date.getUTCFullYear() + " " + hours + ":" + minutes;
     setTimeout("digitalClock()", 1000);
 }
 
