@@ -1,3 +1,23 @@
+const URL_GOOLE_MEET = 'https://meet.google.com/koo-yydq-eeh'
+//
+const googleMeetRender = () => {
+
+    const TemplateLink = `<a  href="${URL_GOOLE_MEET}"
+    class="gradient-text gradient-text_hover link-meet" target="_blank">
+    ${URL_GOOLE_MEET}
+</a>`
+    if (URL_GOOLE_MEET.length !== 0) {
+        document.querySelector('#gmeet_beta').classList.add('active_google_meet')
+        document.querySelector('#linkMeet').innerHTML = TemplateLink
+    }
+    if (URL_GOOLE_MEET.length === 0) {
+        document.querySelector('#gmeet_beta').classList.remove('active_google_meet')
+    }
+}
+
+googleMeetRender()
+
+
 const schedule = [
     {
         "day": 2,
