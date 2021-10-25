@@ -1,3 +1,23 @@
+const URL_GOOLE_MEET = 'https://meet.google.com/koo-yydq-eeh'
+//
+const googleMeetRender = () => {
+
+    const TemplateLink = `<a  href="${URL_GOOLE_MEET}"
+    class="gradient-text gradient-text_hover link-meet" target="_blank">
+    ${URL_GOOLE_MEET}
+</a>`
+    if (URL_GOOLE_MEET.length !== 0) {
+        document.querySelector('#gmeet_beta').classList.add('active_google_meet')
+        document.querySelector('#linkMeet').innerHTML = TemplateLink
+    }
+    if (URL_GOOLE_MEET.length === 0) {
+        document.querySelector('#gmeet_beta').classList.remove('active_google_meet')
+    }
+}
+
+googleMeetRender()
+
+
 const schedule = [
     {
         "day": 2,
@@ -71,7 +91,7 @@ const digitalClock = () => {
     //* добавление ведущих нулей */
     if (hours < 10) hours = "0" + hours;
     if (minutes < 10) minutes = "0" + minutes;
-    document.getElementById("date").innerHTML = checkNumber(date.getDay()) + " " + MONTH[date.getMonth()] + " " + date.getUTCFullYear() + " " + hours + ":" + minutes;
+    document.getElementById("date").innerHTML = checkNumber(date.getDate()) + " " + MONTH[date.getMonth()] + " " + date.getUTCFullYear() + " " + hours + ":" + minutes;
     setTimeout("digitalClock()", 1000);
 }
 
