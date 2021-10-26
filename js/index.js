@@ -218,7 +218,7 @@ const projects = [
         imageUrl: "./image/html.png"
     }, {
         title: "Задание 7",
-        url: "./tasks/task4.html",
+        url: "./tasks/task4work.html",
         imageUrl: "./image/html.png"
     }
 ]
