@@ -1,4 +1,4 @@
-const URL_GOOLE_MEET = 'https://meet.google.com/koo-yydq-eeh'
+const URL_GOOLE_MEET = ''
 //
 const googleMeetRender = () => {
 
@@ -215,6 +215,10 @@ const projects = [
     }, {
         title: "Задание 5-6",
         url: "./tasks/task2.html",
+        imageUrl: "./image/html.png"
+    }, {
+        title: "Задание 7",
+        url: "./tasks/task4.html",
         imageUrl: "./image/html.png"
     }
 ]
