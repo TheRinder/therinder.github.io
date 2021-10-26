@@ -216,6 +216,10 @@ const projects = [
         title: "Задание 5-6",
         url: "./tasks/task2.html",
         imageUrl: "./image/html.png"
+    }, {
+        title: "Задание 7",
+        url: "./tasks/task4.html",
+        imageUrl: "./image/html.png"
     }
 ]
 
