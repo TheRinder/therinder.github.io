@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задания HTML/CSS</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: #ebf3f7;
+    }
+    body{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    footer{
+      margin-top: auto;
+      height: 50px;
+      background: #000;
+    }
+
+    header {
+      margin: 40px 0px;
+    }
+
+    header nav ul {
+      list-style: none;
+      /*Убираем точки у списка*/
+      display: flex;
+      justify-content: end;
+    }
+
+    header nav ul li {
+      margin-right: 15px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      /*Убираем подчёркивание у ссылки*/
+      color: #000;
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: bold;
+
+      border: 2px solid #000;
+      padding: 5px 10px;
+      border-radius: 20px;
+      display: block;
+      transition: all 0.3s;
+    }
+
+    header nav ul li a:hover {
+      background: #000;
+      color: #fff;
+      transition: all .3s;
+    }
+
+    header nav ul li a:active {
+      background: rgb(133, 133, 133);
+      border: 2px solid rgb(133, 133, 133);
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h2>Материалы для задания</h2>
+    <table>
+      <tr>
+        <td>
+          <a target="_blank"
+            href="https://content2.onliner.by/catalog/device/header/02b46d2a97dbc19011f957807a23963d.jpeg">
+            <img src="https://content2.onliner.by/catalog/device/header/02b46d2a97dbc19011f957807a23963d.jpeg" alt="">
+          </a>
+        </td>
+        <td>Ноутбук HONOR MagicBook X15 BBR-WAI9 53011UGC-001</td>
+        <td>1629,00 р.</td>
+      </tr>
+      <tr>
+        <td>
+          <a target="_blank"
+            href="https://content2.onliner.by/catalog/device/header/544912d278bf04db930c7c6dc2ccf004.jpeg">
+            <img src="https://content2.onliner.by/catalog/device/header/544912d278bf04db930c7c6dc2ccf004.jpeg" alt="">
+          </a>
+        </td>
+        <td>Ноутбук ASUS VivoBook 15 K513EA-BQ9841</td>
+        <td>1898,36 р.</td>
+      </tr>
+      <tr>
+        <td>
+          <a target="_blank"
+            href="https://content2.onliner.by/catalog/device/header/8eb99e44370fd51afad74adbc7a11b44.jpeg">
+            <img src="https://content2.onliner.by/catalog/device/header/8eb99e44370fd51afad74adbc7a11b44.jpeg" alt="">
+          </a>
+        </td>
+        <td>Ноутбук LG Gram 16Z90P-G.AH75R<< /td>
+        <td>1629,00 р.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://content2.onliner.by/catalog/device/header/9a08e5f5400e508fb975bf697669c2b5.jpeg">
+            <img src="https://content2.onliner.by/catalog/device/header/9a08e5f5400e508fb975bf697669c2b5.jpeg" alt="">
+          </a>
+        </td>
+        <td>Ноутбук Apple Macbook Air 13" M1 2020 MGN63</td>
+        <td>2780,00 р.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://gc.onliner.by/images/logo/onliner_logo.v3.png?token=1633691838">
+            <img src="https://gc.onliner.by/images/logo/onliner_logo.v3.png?token=1633691838" alt="">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#about"> О магазине </a>
+        </li>
+        <li>
+          <a href="#catalog"> Каталог </a>
+        </li>
+        <li>
+          <a href="#delivery"> Доставка </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="section" id="about">
+
+    </section>
+    <style>
+      .catalog {
+        width: 900px;
+        margin: 0px auto;
+
+        box-sizing: border-box;
+        padding: 20px;
+        background: #fff;
+      }
+
+      .product-card {
+        display: flex;
+      }
+
+      .product-card_image {
+        width: 150px;
+        min-width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid rgb(156, 156, 156);
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+      .product-card_image img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .product-card_info {
+        margin-left: 20px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .product-card_info__title {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .product-card_info__title {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: bold;
+      }
+
+      .product-card_info__spec {
+        font-size: 20px;
+        line-height: 22px;
+        color: rgb(122, 122, 122);
+      }
+
+      .product-card_info__buy {
+        margin-top: auto;
+        display: flex;
+        justify-content: end;
+      }
+
+      .product-card_info__buy a {
+        display: block;
+        padding: 7px 20px;
+        background: rgb(12, 59, 129);
+        color: #fff;
+        text-transform: uppercase;
+
+        font-size: 21px;
+        line-height: 25px;
+        text-decoration: none;
+        border-radius: 50px;
+
+      }
+    </style>
+    <section class="catalog" id="catalog">
+      <div>
+        <div class="product-card">
+          <div class="product-card_image">
+            <img src="https://content2.onliner.by/catalog/device/header/9a08e5f5400e508fb975bf697669c2b5.jpeg" alt="">
+          </div>
+          <div class="product-card_info">
+            <div class="product-card_info__title">
+              <p>
+                Ноутбук Apple Macbook Air 13" M1 2020 MGN63
+              </p>
+              <p>2780,00 р.</p>
+            </div>
+            <div class="product-card_info__spec">
+              <p>
+                Краткая характеристика
+              </p>
+            </div>
+            <div class="product-card_info__buy">
+              <div>
+                <a href="">Быстро купить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+    </section>
+  </main>
+  <footer class="container">
+
+  </footer>
+</body>
+
+</html>

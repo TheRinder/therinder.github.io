@@ -1,4 +1,4 @@
-const URL_GOOLE_MEET = ''
+const URL_GOOLE_MEET = 'https://meet.google.com/jwk-eodi-tho'
 //
 const googleMeetRender = () => {
 
@@ -157,6 +157,14 @@ const materials = [
         title: "Введение в CSS (Занятие 2)",
         tag: "powerpoint"
     },
+    {
+        url: "https://1drv.ms/u/s!AlI_mdwQk8yOhKp5ap5G8WZtDBm9Cw?e=YaquZP",
+        createDate: "2021-10-28T18:30:00.801Z",
+        autor: "Гольчук Кирилл",
+        imageUrl: "./image/powerpoint-2.svg",
+        title: "Flex-box (на примерах)",
+        tag: "powerpoint"
+    },
     // https://1drv.ms/p/s!AlI_mdwQk8yOhKsFTGaF1ibsQtDDXA?e=KLXRS0
 
 
@@ -219,6 +227,10 @@ const projects = [
     }, {
         title: "Задание 7",
         url: "./tasks/task4work.html",
+        imageUrl: "./image/html.png"
+    }, {
+        title: "Задание 8",
+        url: "./tasks/task5.html",
         imageUrl: "./image/html.png"
     }
 ]
