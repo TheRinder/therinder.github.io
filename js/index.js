@@ -1,4 +1,4 @@
-const URL_GOOLE_MEET = 'https://meet.google.com/jwk-eodi-tho'
+const URL_GOOLE_MEET = 'https://meet.google.com/fmi-vqfa-ogc'
 //
 const googleMeetRender = () => {
 
