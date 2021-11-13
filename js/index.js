@@ -1,4 +1,4 @@
-const URL_GOOLE_MEET = 'https://meet.google.com/uuc-ibxc-srp'
+const URL_GOOLE_MEET = ''
 //
 const googleMeetRender = () => {
 
