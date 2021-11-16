@@ -1,4 +1,4 @@
-const URL_GOOLE_MEET = ''
+const URL_GOOLE_MEET = 'https://meet.google.com/cme-dqkg-ukb'
 //
 const googleMeetRender = () => {
 
