@@ -165,6 +165,14 @@ const materials = [
         title: "Flex-box (на примерах)",
         tag: "powerpoint"
     },
+    {
+        url: "https://1drv.ms/p/s!AlI_mdwQk8yOhKxcnkOv64tiKlvf_Q?e=UFIwMM",
+        createDate: "2021-11-23T18:30:00.801Z",
+        autor: "Гольчук Кирилл",
+        imageUrl: "./image/powerpoint-2.svg",
+        title: "Медиа-запросы",
+        tag: "powerpoint"
+    },
     // https://1drv.ms/p/s!AlI_mdwQk8yOhKsFTGaF1ibsQtDDXA?e=KLXRS0
 
 
