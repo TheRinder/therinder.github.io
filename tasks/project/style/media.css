@@ -9,6 +9,11 @@
     gap: 50px 0px;
     justify-content: space-between;
   }
+  @supports not (gap: 50px 0px) {
+    .topic{
+      margin-bottom: 50px;
+    }
+  }
 }
 @media screen and (max-width: 1030px) {
   .topic {
@@ -46,7 +51,6 @@
     flex-wrap: wrap;
     gap: 30px 0px;
   }
-
 }
 @media screen and (max-width: 600px) {
   .banner-info,
@@ -83,18 +87,17 @@
     width: auto;
   }
 }
-@media screen and (max-width: 420px){
-  .footer-container div:nth-child(1){
+@media screen and (max-width: 420px) {
+  .footer-container div:nth-child(1) {
     order: 3;
   }
-  .footer-container div:nth-child(3){
+  .footer-container div:nth-child(3) {
     order: 2;
   }
-  .footer-container div:nth-child(2){
+  .footer-container div:nth-child(2) {
     order: 1;
   }
-  .footer-container div:nth-child(4){
+  .footer-container div:nth-child(4) {
     order: 4;
   }
-
 }
