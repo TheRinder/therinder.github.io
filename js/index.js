@@ -173,6 +173,31 @@ const materials = [
         title: "Медиа-запросы",
         tag: "powerpoint"
     },
+    {
+        url: "https://youtu.be/DOEtVdkKwcU",
+        createDate: "2021-11-30T18:30:00.801Z",
+        autor: "Владилен Минин",
+        imageUrl: "./image/youtube-logo.png",
+        title: "HTML для Начинающих - Практический Курс",
+        tag: "youtybe"
+    },
+    {
+        url: "https://youtu.be/SpCUuyZZTp8",
+        createDate: "2021-11-30T18:30:00.801Z",
+        autor: "Владилен Минин",
+        imageUrl: "./image/youtube-logo.png",
+        title: "CSS для Начинающих - Практический Курс",
+        tag: "youtybe"
+    },
+    {
+        url: "https://1drv.ms/p/s!AlI_mdwQk8yOhK0Xl0N7lW4GBdz2rg?e=aJPZpp",
+        createDate: "2021-11-30T18:30:00.801Z",
+        autor: "Гольчук Кирилл",
+        imageUrl: "./image/powerpoint-2.svg",
+        title: "Позиционирование CSS",
+        tag: "powerpoint"
+    },
+    
     // https://1drv.ms/p/s!AlI_mdwQk8yOhKsFTGaF1ibsQtDDXA?e=KLXRS0
 
 
