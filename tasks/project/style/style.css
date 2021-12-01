@@ -6,25 +6,47 @@
 a {
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 ul {
   list-style: none;
 }
 body {
-  font-family: "Lora", serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: #0e0c0d;
+  color: #e5e5e5;
 }
 .font-roboto,
 .font-roboto a {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
 header {
   height: 80px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 
   position: absolute;
   z-index: 1;
+}
+.big-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.big-post {
+  z-index: 2;
 }
 .banner img {
   width: 100%;
@@ -46,8 +68,8 @@ header {
   align-items: center;
 }
 .header-nav ul li a {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 20px;
   color: #e5e5e5;
   transition: all 0.3s;
 }
@@ -86,6 +108,10 @@ header {
   width: 530px;
   left: 70px;
   bottom: 140px;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7);
 }
 .banner-info h1 {
   margin-top: 15px;
@@ -112,8 +138,8 @@ header {
 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 18px;
 
   color: #ffffff;
 }
@@ -128,10 +154,10 @@ header {
   margin: 150px auto;
 }
 .h2-title {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
-  color: #495057;
 }
 .filter-list {
   display: flex;
@@ -161,11 +187,10 @@ header {
 .topic {
   width: 310px;
   position: relative;
-  color: #6c757d;
 }
 .topic-image {
   width: 100%;
-  height: 280px;
+  height: 200px;
 }
 .topic-image img {
   width: 100%;
@@ -186,6 +211,15 @@ header {
 .tag-list li:last-child {
   margin-right: 0px;
 }
+.topic-price {
+  font-size: 18px;
+  line-height: 25px;
+}
+.topic-price span {
+  color: #dc092e;
+  text-decoration: line-through;
+  padding-right: 15px;
+}
 .topic-date {
   font-size: 12px;
   line-height: 15px;
@@ -193,14 +227,14 @@ header {
 .topic-title {
   font-size: 18px;
   line-height: 25px;
-  color: #495057;
 }
 .topic-text {
   font-size: 12px;
   line-height: 15px;
+  font-weight: 300;
 }
 .topic p {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .topics-list {
   display: flex;
@@ -265,6 +299,15 @@ header {
   height: 350px;
   border-radius: 5px;
 }
+.post::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
 .post:hover img {
   transform: scale(1.2);
   transition: all 0.3s ease-in-out;
@@ -288,6 +331,7 @@ header {
   left: 40px;
   width: auto;
   right: 40px;
+  z-index: 2;
 }
 .post .topic .topic-title {
   color: #fff;
@@ -318,14 +362,71 @@ footer {
 .footer-container h3 {
   margin-bottom: 15px;
 }
+.feedback p {
+  font-weight: 300;
+}
 .footer-ul {
   display: flex;
   flex-direction: column;
   gap: 18px 0px;
 }
 .footer-ul li a {
-  font-size: 12px;
-  line-height: 15px;
+  color: #e5e5e5;
+  transition: all 0.3s;
+}
+.footer-ul li a:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+.feedback-form {
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+}
+.feedback-form input,
+.feedback-form button {
+  display: block;
+}
+.feedback-form input {
+  width: 70%;
+  padding: 5px 7px;
+  border: none;
+  background: #495057;
+  border-radius: 5px 0px 0px 5px;
+  color: #e5e5e5;
+}
+.post-list {
+  scrollbar-width: none;
+  margin-top: 20px;
+}
+.topics-list{
+  margin-top: 20px;
+}
+.post-list::-webkit-scrollbar {
+  width: 0px; /* ширина для вертикального скролла */
+  height: 0px; /* высота для горизонтального скролла */
+}
+.feedback-form button {
+  color: #e5e5e5;
+  font-weight: 400;
+  width: 30%;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  background: #343a40;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.feedback-form button:hover {
+  background: #454d55;
+  transition: all 0.3s;
+}
+.feedback-form label {
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
   color: #e5e5e5;
 }
 .headquarter {
@@ -460,6 +561,16 @@ footer {
   border-bottom: 2px solid #fff !important;
   color: #fff;
   padding: 4px;
+}
+.mobile-social li,
+.header-social li {
+  width: 20px;
+  height: 20px;
+}
+.mobile-social li a svg,
+.header-social li a svg {
+  width: 100%;
+  height: 100%;
 }
 
 .mobile-filter {
