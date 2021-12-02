@@ -197,9 +197,15 @@ const materials = [
         title: "Позиционирование CSS",
         tag: "powerpoint"
     },
-    
-    // https://1drv.ms/p/s!AlI_mdwQk8yOhKsFTGaF1ibsQtDDXA?e=KLXRS0
-
+    {
+        url: "https://1drv.ms/p/s!AlI_mdwQk8yOhK0j5zgDV8Lq0K0R0g?e=cNMv0L",
+        createDate: "2021-12-02T18:30:00.801Z",
+        autor: "Гольчук Кирилл",
+        imageUrl: "./image/powerpoint-2.svg",
+        title: "html-формы (краткая)",
+        tag: "powerpoint"
+    },
+    // 
 
 ]
 const TemplateMaterial = (url, title, autor, imageUrl, date) => {
