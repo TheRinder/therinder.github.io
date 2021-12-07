@@ -7,31 +7,213 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form - new material</title>
 </head>
+<style>
+  * {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 0px 70px;
+    box-sizing: border-box;
+  }
+
+  .menu-nav {
+    margin: 0px 20px;
+  }
+
+  .menu-nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .menu-nav a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .menu-nav li {
+    margin: 0px 10px;
+  }
+
+  .menu-search {
+    margin-left: auto;
+    width: 350px;
+  }
+
+  .menu-search input {
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    padding: 5px 9px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+</style>
 
 <body>
-  <form action="#" method="get">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name">
+  <header>
+    <div class="logo">
+      <img src="../image/logo.png" alt="">
     </div>
-    <div>
-      <input type="checkbox" name="checkbox" id="checkbox1" value="r1">
-      <label for="checkbox1">checkbox1</label>
-      <input type="checkbox" name="checkbox" id="checkbox2" value="r2">
-      <label for="checkbox2">checkbox2</label>
-      <input type="checkbox" name="checkbox" id="checkbox3" value="r3">
-      <label for="checkbox3">checkbox3</label>
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="">изделия</a></li>
+        <li><a href="">о нас</a></li>
+        <li><a href="">контакты</a></li>
+      </ul>
+    </nav>
+    <div class="menu-search">
+      <input type="text" placeholder="Поиск по сайту">
     </div>
-    <div>
-      <input type="radio" name="radio" id="radio1" value="r1">
-      <label for="radio1">radio1</label>
-      <input type="radio" name="radio" id="radio2" value="r2">
-      <label for="radio2">radio2</label>
-      <input type="radio" name="radio" id="radio3" value="r3">
-      <label for="radio3">radio3</label>
-    </div>
-    <button type="submit">submit</button>
-  </form>
+  </header>
+  <main>
+    <style>
+      .product-check-list {}
+    </style>
+    <section>
+      <h2>Конфигурация товара</h2>
+      <div class="product-check-list">
+        <ul>
+          <li>
+            <input type="checkbox" name="product_1" id="checkbox1">
+            <label for="checkbox1">Гравировка имени</label>
+          </li>
+          <li>
+            <input type="checkbox" name="product_2" id="checkbox2">
+            <label for="checkbox2">Золотые буквы</label>
+          </li>
+          <li>
+            <input type="checkbox" name="product_3" id="checkbox3">
+            <label for="checkbox3">Золотая нить</label>
+          </li>
+          <li>
+            <input type="checkbox" name="product_4" id="checkbox4">
+            <label for="checkbox4">Индивидуальный размер изделия</label>
+          </li>
+          <li>
+            <input type="checkbox" name="product_5" id="checkbox5">
+            <label for="checkbox5">Дополнительные параметры</label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <style>
+      .map {
+        position: relative;
+        height: 600px;
+        width: 100%;
+      }
+
+      .map-form {
+        position: absolute;
+        right: 80px;
+        top: 50px;
+        height: 400px;
+        width: 300px;
+        background: rgba(0, 0, 0, .7);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, .2);
+        box-sizing: border-box;
+        padding: 8px;
+        border-radius: 8px;
+      }
+
+      .map-form form,
+      .map-form h2 {
+        color: #fff;
+      }
+
+      .map-form form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .map-form form label,
+      .map-form form input,
+      .map-form form button,
+      .map-form form textarea {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      .map-form form input {
+        padding: 5px 7px;
+        border-radius: 8px;
+        border: none;
+      }
+
+      .map-form form div {
+        margin-top: 18px;
+      }
+
+      .map-form form div:last-child {
+        margin-top: auto;
+      }
+
+      .map-form form input {
+        margin-top: 8px;
+      }
+
+      .map-form form textarea {
+        resize: none;
+        height: 100px;
+        border-radius: 8px;
+        border: none;
+        padding: 5px;
+      }
+
+      .map-form form button {
+        padding: 5px 0px;
+        background: #4D8A00;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+    <section class="map">
+      <div class="map-form">
+        <form action="#">
+          <h2>Заказать звонок</h2>
+          <div>
+            <label for="">ФИО</label>
+            <input type="text">
+          </div>
+          <div>
+            <label for="">Номер телефона</label>
+            <input type="text">
+          </div>
+          <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A153ea344cd30771867e85eb92b9d44acf76ca6b76944c6d86f327cf202dbece8&amp;source=constructor"
+        width="100%" height="100%" frameborder="0"></iframe>
+    </section>
+  </main>
 </body>
 
 </html>
