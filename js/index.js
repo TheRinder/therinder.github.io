@@ -276,6 +276,11 @@ const projects = [
         title: "Вёрстка страницы",
         url: "./tasks/task6.html",
         imageUrl: "./image/html.png"
+    },
+    {
+        title: "Form (dev)",
+        url: "./tasks/task7.html",
+        imageUrl: "./image/html.png"
     }
 ]
 
