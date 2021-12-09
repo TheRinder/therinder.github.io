@@ -1,0 +1,168 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+}
+
+.input-container,
+.select-container {
+  position: relative;
+  margin-top: 15px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.select-container select {
+  display: block;
+  width: 100%;
+  padding: 8px 7px 5px 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: orange solid 1px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.input-container input:focus {
+  color: orange;
+}
+
+.input-container label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #fff;
+  padding: 0px 3px;
+}
+
+.select-container select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkbox-list {
+  margin-top: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+.checkbox-container{
+  position: relative;
+  margin-top: 10px;
+}
+.checkbox-container label{
+  padding-left: 45px;
+}
+.checkbox-container label::after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 40px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid orange;
+  border-radius: 20px;
+  transition: all .3s;
+}
+.checkbox-container label::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: chocolate;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+  transition: all .3s;
+  z-index: 2;
+}
+.checkbox-container input:checked + label::before{
+  left: 20px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+.checkbox-container input:checked + label::after{
+  background: orange;
+  transition: all .3s;
+}
+.radio-list{
+  margin-top: 15px;
+  display: flex;
+}
+.radio-container {
+  margin-right: 20px;
+}
+.radio-container input[type="radio"]{
+  appearance: none;
+  -webkit-appearance: none;
+}
+label{
+  cursor: pointer;
+}
+
+.radio-container input:checked + label.icon-telegram svg path {
+  fill: rgb(70, 189, 245);
+}
+.radio-container input:checked + label.icon-wp svg path {
+  fill: rgb(23, 151, 23);
+}
+.radio-container input:checked + label.icon-call svg path {
+  fill: rgb(245, 70, 207);
+}
+.radio-container label:hover svg path{
+  fill: orange;
+}
+#checkbox_5:checked ~ .checkbox-subContainer{
+  opacity: 1;
+  height: 120px;
+  transition: all .3s;
+}
+.checkbox-subContainer{
+  margin-top: 10px;
+  opacity: 0;
+  height: 0px;
+  transition: all .3s;
+}
+.checkbox-subContainer textarea{
+  cursor: default;
+  resize: none;
+  border: 1px solid orange;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 22px;
+}
+.checkbox-subContainer textarea:focus{
+  color: orange;
+}
