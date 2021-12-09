@@ -282,6 +282,12 @@ const projects = [
         url: "./tasks/task7.html",
         imageUrl: "./image/html.png"
     }
+    ,
+    {
+        title: "Auth form RUNO",
+        url: "./tasks/task8.html",
+        imageUrl: "./image/html.png"
+    }
 ]
 
 const ProjectRender = projects => {

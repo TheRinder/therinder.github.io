@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма авторизации сайт "РУНО"</title>
+</head>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./project/image/banner.png');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .toggle-container {
+    position: relative;
+  }
+
+  .toggle-container input {
+    appearance: none;
+  }
+
+  .toggle-container label {
+    padding-left: 45px;
+  }
+
+  .toggle-container label span {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+  }
+
+  .toggle-container label span+span {
+    display: block;
+  }
+
+  .toggle-container input:checked+label span {
+    display: block;
+  }
+
+  .toggle-container input:checked+label span+span {
+    display: none;
+  }
+
+  .toggle-container label::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 40px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: all .3s;
+  }
+
+  .toggle-container label::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    transition: all .3s;
+  }
+
+  .toggle-container input:checked+label::before {
+    left: 20px;
+    transition: all .3s;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .toggle-container input:checked+label::after {
+    background: black;
+    transition: all .3s;
+  }
+
+  .auth-container {
+    width: 380px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, .4);
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+
+  .auth-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+  }
+
+  .input-container {
+    margin-top: 25px;
+  }
+
+  .input-container input {
+    display: block;
+    width: 100%;
+    padding: 5px 7px;
+    box-sizing: border-box;
+  }
+
+  .button-container {
+    margin-top: 15px;
+  }
+
+  .button-container button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0px;
+  }
+
+  .auth-header {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .4);
+    margin: -20px -20px 0px -20px;
+    padding: 0px 20px;
+    height: 50px;
+  }
+
+  .auth-header p {
+    margin: 0px auto;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+</style>
+
+<body>
+  <!-- <div>
+    <form action="">
+      <div class="toggle-container">
+        <input type="checkbox" name="" id="checkbox_1">
+        <label for="checkbox_1">
+          Запомнить пароль
+        </label>
+      </div>
+      <div class="toggle-container">
+        <input type="checkbox" name="" id="checkbox_2">
+        <label for="checkbox_2">
+          <span>Включить свет</span>
+          <span>Выключить свет</span>
+        </label>
+      </div>
+    </form>
+  </div> -->
+  <div class="auth-container">
+    <div class="auth-header">
+      <div>
+        <img src="project/image/RUNO.png" alt="">
+      </div>
+      <p>
+        Автоирзация
+      </p>
+    </div>
+    <div class="auth-form-container">
+      <form action="">
+        <div class="input-container">
+          <label for="login">Введите логин</label>
+          <input type="text" id="login" name="login" required>
+        </div>
+        <div class="input-container">
+          <label for="password">Введите пароль</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="auth-toggle">
+          <div class="toggle-container">
+            <input type="checkbox" name="" id="checkbox_1">
+            <label for="checkbox_1">
+              Запомнить пароль
+            </label>
+          </div>
+        </div>
+        <div class="button-container">
+          <button type="submit">
+            Войти
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
