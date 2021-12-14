@@ -1,0 +1,65 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+}
+.banner-container{
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-img-list,
+.banner-img{
+  width: 100%;
+  height: 100%;
+}
+.banner-img{
+  display: none;
+}
+.banner-img img{
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.banner-nav-list{
+  position: absolute;
+  right: -15%;
+  top: 0px;
+  height: 100%;
+  width: 20%;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all .3s;
+}
+.banner-nav-list:hover{
+  transition: all .3s;
+  right: 0px;
+}
+.banner-nav-list ul{
+  list-style: none;
+}
+.banner-nav-list li{
+  height: 150px;
+}
+.banner-nav-list li label{
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+.banner-nav-list li label:hover{
+  transition: all .3s ease-in-out;
+  background: rgba(0, 0, 0, 0.4);
+}
+#radio1:checked ~ .banner-img-list .banner1,
+#radio2:checked ~ .banner-img-list .banner2,
+#radio3:checked ~ .banner-img-list .banner3,
+#radio4:checked ~ .banner-img-list .banner4{
+  display: block;
+}
+input[name="banner"]{
+  display: none;
+}
