@@ -287,6 +287,16 @@ const projects = [
         title: "Auth form RUNO",
         url: "./tasks/task8.html",
         imageUrl: "./image/html.png"
+    },
+    {
+        title: "Добавление карты",
+        url: "./tasks/task9.html",
+        imageUrl: "./image/html.png"
+    },
+    {
+        title: "Импровизированный слайдер",
+        url: "./tasks/task10.html",
+        imageUrl: "./image/html.png"
     }
 ]
 
