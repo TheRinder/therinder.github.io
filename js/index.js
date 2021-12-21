@@ -17,7 +17,6 @@ const googleMeetRender = () => {
 
 googleMeetRender()
 
-
 const schedule = [
     {
         "day": 2,
